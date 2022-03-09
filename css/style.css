@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;1,100 & display=swap');
+
+
+
+.color-gris{
+    color: darkgray;
+}
+
+
+.para-roboto{
+    font-family:'Montserrat', sans-serif;
+    font-size: 75px;
+}
+
+.textocentrado{
+    font-size: 30px;
+}
+
+body{
+    background-image: url(../img/IMG_3264-Editar.jpg);
+    background-size: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.containerFMT{
+    font-size: 22px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.haeder-img{
+    width: 120px;
+    height: 120px;
+   
+}
+.container-column{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav ul li{
+    display: inline;
+   padding: 1rem;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img{
+max-width: 30%;
+min-width: 10%;
+}
+.main-hero{
+max-width: 100%;
+min-width: 10%;
+}
+.container-galeria{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem;
+
+}
+.img{
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 1px;
+}
+a{
+    text-decoration: none;
+} 
+
+.CP{
+    display: flex;
+    flex-direction: column;
+}
+
+.phtexto{
+    font-size: 15px;
+    display: flex;
+}
+
+@media(max-width: 578px){
+    
+    header{
+        grid-area:header;
+        height: 100px;
+    }
+    main{
+        grid-area: main;
+        height: 400px;
+    }
+
+   .conteiner-grid{
+       display: grid;
+       grid-template-areas:
+    "header"
+    "main"
+    "section";
+
+   }
+}
